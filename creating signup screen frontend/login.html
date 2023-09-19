@@ -8,10 +8,12 @@
     <title>Login or Sign Up</title>
   </head>
   <body>
+    
     <div class="container" id="container">
       <div class="form-container sign-up-container">
         <form action="/user/signUp" method="POST">
           <h1>Create Account</h1>
+          
           <input type="text" placeholder="Name" name="name" required />
           <input type="email" placeholder="Email" name="email" required />
           <input
@@ -26,6 +28,7 @@
       <div class="form-container sign-in-container">
         <form action="#">
           <h1>Login</h1>
+          
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <a href="#">Forgot your password?</a>
@@ -50,6 +53,8 @@
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+
   <script src="login.js"></script>
 </html>
  
