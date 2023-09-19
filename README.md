@@ -1,1 +1,1 @@
-# Expense-tracker-full-stack
+# expense-tracker-full-stack
