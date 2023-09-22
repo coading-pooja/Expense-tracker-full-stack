@@ -29,7 +29,7 @@ async function signup() {
     
 
     const response = await axios.post("http://localhost:3000/signup", signupDetails);
-    alert(response.data.message);
+    alert("sign up successful");
     // window.location.href = "/homePage";
   } catch (error) {
     if (error.response) {
@@ -51,7 +51,7 @@ async function login() {
 
 
     const response = await axios.post("http://localhost:3000/login", loginDetails);
-    alert(response.data.message);
+   alert("login successful");
     window.location.href = "/homePage";
   } catch (error) {
     if (error.response) {
