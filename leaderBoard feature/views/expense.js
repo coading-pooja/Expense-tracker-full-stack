@@ -202,9 +202,9 @@ leaderboardBtn.onclick = async () => {
 
         console.log("leaderboardArray>>>>>>>>>>>>>>>>>>>>>", leaderboardArray.data);
 
-        leaderboardArray.data.forEach((expense) => {
+        leaderboardArray.data.forEach((expenses) => {
             childElem = document.createElement('li');
-            childElem.textContent = `Name ${expense.name} Total Expenses - ${expense.total ?? 0}`;
+            childElem.textContent = `Name ${expenses.name} Total Expenses - ${expenses.total ?? 0}`;
             console.log(childElem.textContent);
             leaderboardBtn.appendChild(childElem);
         })

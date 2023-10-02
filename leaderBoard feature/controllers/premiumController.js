@@ -22,13 +22,13 @@ const getUserLeaderboard = async(req, res)=>{
         var userLeaderboardDetails = [];
         users.forEach(user =>{
             if(userAggregatedExpenses[user.id]==undefined){ // for those user who have not added any expense
-                userLeaderboardDetails.push({name: user.name, total_cost: 0});
+                userLeaderboardDetails.push({name: user.name, total: 0});
             }
             else{
-                userLeaderboardDetails.push({name: user.name, total_cost: userAggregatedExpenses[user.id]});
+                userLeaderboardDetails.push({name: user.name, total: userAggregatedExpenses[user.id]});
             }
         })
-        userLeaderboardDetails.sort((a,b)=> a.total_cost-b.total_cost )
+        userLeaderboardDetails.sort((a,b)=> a.total-b.total )
         console.log(userLeaderboardDetails);
         res.status(200).json(userLeaderboardDetails);
 
