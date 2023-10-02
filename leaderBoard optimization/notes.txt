@@ -1,0 +1,15 @@
+//  from leaderboard 
+frontend side story....
+show the leaderboard button - Dom manipulation
+when u click on this button an api call should happened
+you will get the data in sorted order from backend
+Do dom manipulation and show the data.
+
+backside story...
+create a new route -> /premium/leaderboard
+find all the expense and then group by unique userid
+i need name of the user as well
+query the user table and you will get all the id and username.
+in this you are running 2 queries it would make everything slow
+
+solution is join two tables
